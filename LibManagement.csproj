@@ -7,6 +7,69 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\about.html" />
+    <Content Remove="wwwroot\assets\css\ajax-loader.gif" />
+    <Content Remove="wwwroot\assets\css\animate.css" />
+    <Content Remove="wwwroot\assets\css\bootsnav.css" />
+    <Content Remove="wwwroot\assets\css\bootstrap.min.css" />
+    <Content Remove="wwwroot\assets\css\flaticon.css" />
+    <Content Remove="wwwroot\assets\css\font-awesome.min.css" />
+    <Content Remove="wwwroot\assets\css\fonts\slick.eot" />
+    <Content Remove="wwwroot\assets\css\fonts\slick.svg" />
+    <Content Remove="wwwroot\assets\css\fonts\slick.ttf" />
+    <Content Remove="wwwroot\assets\css\fonts\slick.woff" />
+    <Content Remove="wwwroot\assets\css\linearicons.css" />
+    <Content Remove="wwwroot\assets\css\main.css" />
+    <Content Remove="wwwroot\assets\css\responsive.css" />
+    <Content Remove="wwwroot\assets\css\slick-theme.css" />
+    <Content Remove="wwwroot\assets\css\slick.css" />
+    <Content Remove="wwwroot\assets\css\style.css" />
+    <Content Remove="wwwroot\assets\fonts\Flaticon.eot" />
+    <Content Remove="wwwroot\assets\fonts\Flaticon.svg" />
+    <Content Remove="wwwroot\assets\fonts\Flaticon.ttf" />
+    <Content Remove="wwwroot\assets\fonts\Flaticon.woff" />
+    <Content Remove="wwwroot\assets\fonts\fontawesome-webfont.eot" />
+    <Content Remove="wwwroot\assets\fonts\fontawesome-webfont.svg" />
+    <Content Remove="wwwroot\assets\fonts\fontawesome-webfont.ttf" />
+    <Content Remove="wwwroot\assets\fonts\fontawesome-webfont.woff" />
+    <Content Remove="wwwroot\assets\fonts\fontawesome-webfont.woff2" />
+    <Content Remove="wwwroot\assets\fonts\FontAwesome.otf" />
+    <Content Remove="wwwroot\assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Remove="wwwroot\assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Remove="wwwroot\assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Remove="wwwroot\assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Remove="wwwroot\assets\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Remove="wwwroot\assets\fonts\Linearicons-Free.eot" />
+    <Content Remove="wwwroot\assets\fonts\Linearicons-Free.svg" />
+    <Content Remove="wwwroot\assets\fonts\Linearicons-Free.ttf" />
+    <Content Remove="wwwroot\assets\fonts\Linearicons-Free.woff" />
+    <Content Remove="wwwroot\assets\fonts\Linearicons-Free.woff2" />
+    <Content Remove="wwwroot\assets\images\counter\counter-banner.jpg" />
+    <Content Remove="wwwroot\assets\images\ERD.png" />
+    <Content Remove="wwwroot\assets\images\Long_Nguyen_headshot.jpg" />
+    <Content Remove="wwwroot\assets\images\Shrimanth_Kavuluru_headshot.png" />
+    <Content Remove="wwwroot\assets\images\Tasnim_Shai_headshot.jpg" />
+    <Content Remove="wwwroot\assets\images\welcome-hero\banner.jpg" />
+    <Content Remove="wwwroot\assets\img\controls.png" />
+    <Content Remove="wwwroot\assets\img\usf-logo-png-2.png" />
+    <Content Remove="wwwroot\assets\img\v17_107.png" />
+    <Content Remove="wwwroot\assets\js\app.js" />
+    <Content Remove="wwwroot\assets\js\bootsnav.js" />
+    <Content Remove="wwwroot\assets\js\bootstrap.min.js" />
+    <Content Remove="wwwroot\assets\js\custom.js" />
+    <Content Remove="wwwroot\assets\js\feather.min.js" />
+    <Content Remove="wwwroot\assets\js\jquery.counterup.min.js" />
+    <Content Remove="wwwroot\assets\js\jquery.js" />
+    <Content Remove="wwwroot\assets\js\main.js" />
+    <Content Remove="wwwroot\assets\js\slick.min.js" />
+    <Content Remove="wwwroot\assets\js\waypoints.min.js" />
+    <Content Remove="wwwroot\assets\logo\favicon.png" />
+    <Content Remove="wwwroot\charts.html" />
+    <Content Remove="wwwroot\database.html" />
+    <Content Remove="wwwroot\index.html" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.10">
@@ -17,6 +80,69 @@
 
   <ItemGroup>
     <Folder Include="Migrations\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\about.html" />
+    <None Include="wwwroot\assets\css\ajax-loader.gif" />
+    <None Include="wwwroot\assets\css\animate.css" />
+    <None Include="wwwroot\assets\css\bootsnav.css" />
+    <None Include="wwwroot\assets\css\bootstrap.min.css" />
+    <None Include="wwwroot\assets\css\flaticon.css" />
+    <None Include="wwwroot\assets\css\font-awesome.min.css" />
+    <None Include="wwwroot\assets\css\fonts\slick.eot" />
+    <None Include="wwwroot\assets\css\fonts\slick.svg" />
+    <None Include="wwwroot\assets\css\fonts\slick.ttf" />
+    <None Include="wwwroot\assets\css\fonts\slick.woff" />
+    <None Include="wwwroot\assets\css\linearicons.css" />
+    <None Include="wwwroot\assets\css\main.css" />
+    <None Include="wwwroot\assets\css\responsive.css" />
+    <None Include="wwwroot\assets\css\slick-theme.css" />
+    <None Include="wwwroot\assets\css\slick.css" />
+    <None Include="wwwroot\assets\css\style.css" />
+    <None Include="wwwroot\assets\fonts\Flaticon.eot" />
+    <None Include="wwwroot\assets\fonts\Flaticon.svg" />
+    <None Include="wwwroot\assets\fonts\Flaticon.ttf" />
+    <None Include="wwwroot\assets\fonts\Flaticon.woff" />
+    <None Include="wwwroot\assets\fonts\fontawesome-webfont.eot" />
+    <None Include="wwwroot\assets\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\assets\fonts\fontawesome-webfont.ttf" />
+    <None Include="wwwroot\assets\fonts\fontawesome-webfont.woff" />
+    <None Include="wwwroot\assets\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\assets\fonts\FontAwesome.otf" />
+    <None Include="wwwroot\assets\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="wwwroot\assets\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="wwwroot\assets\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="wwwroot\assets\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="wwwroot\assets\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="wwwroot\assets\fonts\Linearicons-Free.eot" />
+    <None Include="wwwroot\assets\fonts\Linearicons-Free.svg" />
+    <None Include="wwwroot\assets\fonts\Linearicons-Free.ttf" />
+    <None Include="wwwroot\assets\fonts\Linearicons-Free.woff" />
+    <None Include="wwwroot\assets\fonts\Linearicons-Free.woff2" />
+    <None Include="wwwroot\assets\images\counter\counter-banner.jpg" />
+    <None Include="wwwroot\assets\images\ERD.png" />
+    <None Include="wwwroot\assets\images\Long_Nguyen_headshot.jpg" />
+    <None Include="wwwroot\assets\images\Shrimanth_Kavuluru_headshot.png" />
+    <None Include="wwwroot\assets\images\Tasnim_Shai_headshot.jpg" />
+    <None Include="wwwroot\assets\images\welcome-hero\banner.jpg" />
+    <None Include="wwwroot\assets\img\controls.png" />
+    <None Include="wwwroot\assets\img\usf-logo-png-2.png" />
+    <None Include="wwwroot\assets\img\v17_107.png" />
+    <None Include="wwwroot\assets\js\app.js" />
+    <None Include="wwwroot\assets\js\bootsnav.js" />
+    <None Include="wwwroot\assets\js\bootstrap.min.js" />
+    <None Include="wwwroot\assets\js\custom.js" />
+    <None Include="wwwroot\assets\js\feather.min.js" />
+    <None Include="wwwroot\assets\js\jquery.counterup.min.js" />
+    <None Include="wwwroot\assets\js\jquery.js" />
+    <None Include="wwwroot\assets\js\main.js" />
+    <None Include="wwwroot\assets\js\slick.min.js" />
+    <None Include="wwwroot\assets\js\waypoints.min.js" />
+    <None Include="wwwroot\assets\logo\favicon.png" />
+    <None Include="wwwroot\charts.html" />
+    <None Include="wwwroot\database.html" />
+    <None Include="wwwroot\index.html" />
   </ItemGroup>
 
 </Project>

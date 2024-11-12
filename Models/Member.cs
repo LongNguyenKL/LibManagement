@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace LibManagement.Models
 {
@@ -18,7 +17,7 @@ namespace LibManagement.Models
 
         public string Gender { get; set; }
 
-        public int Contact { get; set; }
+        public string Contact { get; set; }
  
         public int NumberOfBooksBorrowed { get; set; }
 

@@ -1,28 +1,71 @@
+using LibManagement.Data;
 using LibManagement.Models;
 using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace LibManagement.Controllers
 {
-    public class HomeController : Controller
+    [Route("api/[controller]")]
+    [ApiController]
+    public class LibraryController : ControllerBase
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ApplicationDbContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        public LibraryController(ApplicationDbContext context)
         {
-            _logger = logger;
+            _context = context;
         }
 
-        public IActionResult Index()
+        // Endpoint to get book details by BookId
+        [HttpGet("books/{bookId}")]
+        public async Task<IActionResult> GetBookById(int bookId)
         {
-            return View();
+            var book = await _context.Books
+                .Where(b => b.BookId == bookId)
+                .Select(b => new
+                {
+                    b.BookId,
+                    b.Title,
+                    b.Author,
+                    b.Genre,
+                    b.PublishedYear,
+                    b.Rating
+                })
+                .FirstOrDefaultAsync();
+
+            if (book == null)
+            {
+                return NotFound("Book not found.");
+            }
+
+            return Ok(book);
         }
 
-        public IActionResult Privacy()
+        // Endpoint to get books by Genre
+        [HttpGet("books/genre/{genre}")]
+        public async Task<IActionResult> GetBooksByGenre(string genre)
         {
-            return View();
-        }
+            var books = await _context.Books
+                .Where(b => b.Genre == genre)
+                .Select(b => new
+                {
+                    b.BookId,
+                    b.Title,
+                    b.Author,
+                    b.PublishedYear,
+                    b.Rating
+                })
+                .ToListAsync();
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+            if (!books.Any())
+            {
+                return NotFound("No books found in this genre.");
+            }
+
+            return Ok(books);
+        }
     }
 }
